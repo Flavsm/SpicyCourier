@@ -29,15 +29,15 @@ testing/examples:
 maybe a simple word doc on google docs or array
 
 anything goes database {
-
+const anythingGoes = ["I love you, and that’s the beginning and end of everything.", "I have a lot of questions. Number one, how dare you?", “Time is money; Money is power; Power is pizza; Pizza is knowledge. Let’s go!”, ];
 }
 
 something nice databse {
-
+const somethingNice = ["No one is you and that is your superpower.", "Embrace the glorious mess that you are.", "I swear I couldn't love you more than I do right now, and yet I know I will tomorrow.", "I think I'd miss you even if we never met."];
 }
 
 make it weird database {
-
+const makeItWeird = ["I don't believe in astrology; I'm a Sagittarius and we're skeptical.", "Place is the greatest thing, as it contains all things.", "If I was looking for safe, I wouldn't be sticking my dick through the wall", "How do you get a round meatball into a sandwich? Lateral.Thinking."];
 } */
 
 
@@ -46,6 +46,7 @@ function sendEmail() {
     const recName = document.getElementById('recname').value;
     const recEmail = document.getElementById('recmail').value;
     const sendName = document.getElementById('sendname').value; 
+    const message;
     const inputLabel = document.getElementsByClassName('inputLabel');
 
     Email.send({
@@ -53,7 +54,7 @@ function sendEmail() {
         To : `${recEmail}`,
         From : "spicycourier@gmail.com",
         Subject : `Spicy Courier here - we got a message for you ${recName}`,
-        Body : `Hello ${recName}, what do you think? Hahahahaha! Love you, ${sendName}`
+        Body : `Hello ${recName}, you hot thang. Cheers, ${sendName}`
     }).then(function(message){
         alert("The Courier is on its way!")
         location.reload(inputLabel);
