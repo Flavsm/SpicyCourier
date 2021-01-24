@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?Courier+Prime&family=Sriracha&display=swap" rel="stylesheet"> 
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="./app.js"></script>
+
     <title>Project 1</title>
 </head>
 <body>
@@ -45,20 +48,22 @@
                     </div>
                     <div class="infoBox">
                         <div class="infoLabel">
-                            <label for="name">Receiver's Name:</label>
-                            <input type="text">
+                            <label for="recname">Recipient's Name:</label>
+                            <input type="text" class="inputLabel" id="recname" value="">
                         </div>
                         <div class="infoLabel">
-                            <label for="email">Receiver's Email:</label> 
-                            <input type="text">
+                            <label for="recemail">Recipient's Email:</label> 
+                            <input type="text" class="inputLabel" id="recmail" value="">
                         </div>
                         <div class="infoLabel"> 
-                            <label for="email">Your Name:</label> 
-                            <input type="text">
+                            <label for="sendname">Your Name:</label> 
+                            <input type="text" class="inputLabel" id="sendname" value="">
                         </div>
                     </div>
                     <div class="sendButton">
-                        <button type="submit" onclick="alert('Courier is on its way. Good luck!')">Send</button>
+                        <form method="post">
+                            <input class="theSendButton" type="button" value="Send Email" onclick="sendEmail()"/>
+                        </form>  
                     </div>
                 </div>
             </form>
@@ -70,7 +75,6 @@
         </div>
     </footer>
     </div>
-    <script src="./app.js"></script>
 </body>
 </html>
 

@@ -21,7 +21,7 @@ body {
     border-radius: 25px;
     border: 1px solid black;
     padding: 30px;
-    opacity: 90%;
+    opacity: 95%;
     font-family: 'Courier Prime', monospace;
 }
 
@@ -83,13 +83,14 @@ body {
     align-items: flex-end;
 
 }
-button {
+.theSendButton {
     width:10vw;
     background-color: rgb(228, 58, 58);
     border-radius: 25px;
     border: 1px black solid;
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
     
 }
 
