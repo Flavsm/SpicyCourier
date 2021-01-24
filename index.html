@@ -1,81 +1,75 @@
 <!DOCTYPE html>
 <html lang="eng">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?Courier+Prime&family=Sriracha&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?Courier+Prime&family=Sriracha&display=swap" rel="stylesheet">
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script> 
-    <script src="./app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-    <title>Project 1</title>
+
+    <title>The Spicy Courier</title>
 </head>
+
 <body>
-    <!--Pigeons and pepper design-->
     <h1 class="headerTitle">Spicy Courier</h1>
     <div class="everythingBox">
-    <header>
-        <div class="headerBox">     
-            <p class="headerParagraph">Send a random message to anyone you want. You get to choose the tone of the message, but you won't know what it says.</p>
-            <span class="headerSpan">
-                <ol class="instructionList">
-                    <li id="oneinstruction">Pick the type of message.</li>
-                    <li id="twoinstruction">Pick a person.</li>
-                    <li id="threeinstruction">Send it.</li>
-                </ol>
-            </span>
-        </div>
-    </header>
-    <main>
-        <div class="mainBox">
-            <form id='myfom'>
-                <div class="inputBox">
-                    <div class="chooseBox">
-                        <div>
-                            <input type="radio" id='anything' name='type' value='anything'>
-                            <label for="anything">Anything Goes</label>
+        <header>
+            <div class="headerBox">
+                <p class="headerParagraph">Send a random message to anyone you want. You get to choose the tone of the
+                    message, but you won't know what it says.</p>
+                <span class="headerSpan">
+                    <ol class="instructionList">
+                        <li id="oneinstruction">Pick the type of message.</li>
+                        <li id="twoinstruction">Pick a person.</li>
+                        <li id="threeinstruction">Send it.</li>
+                    </ol>
+                </span>
+            </div>
+        </header>
+        <main>
+            <div class="mainBox">
+                <form id='myfom'>
+                    <div class="inputBox">
+                        <div class="chooseBox">
+                            <input type="radio" name="style" id="anythinggoes" value="anythinggoes"> Anything Goes
+                            <input type="radio" name="style" id="somethingnice" value="somethingnice"> Something Nice
+                            <input type="radio" name="style" id="makeitweird" value="makeitweird"> Make It Weird
                         </div>
-                        <div>
-                            <input type="radio" id="nice" name='type' value='nice'>    
-                            <label for="nice">Something Nice</label>
+                        <div class="infoBox">
+                            <div class="infoLabel">
+                                <label for="recname">Recipient's Name:</label>
+                                <input type="text" class="inputLabel" id="recname" value="">
+                            </div>
+                            <div class="infoLabel">
+                                <label for="recemail">Recipient's Email:</label>
+                                <input type="text" class="inputLabel" id="recmail" value="">
+                            </div>
+                            <div class="infoLabel">
+                                <label for="sendname">Your Name:</label>
+                                <input type="text" class="inputLabel" id="sendname" value="">
+                            </div>
                         </div>
-                        <div>
-                            <input type="radio" id='weird' name='type' value='weird'>    
-                            <label for="weird">Make It Weird</label>
-                        </div> 
-                    </div>
-                    <div class="infoBox">
-                        <div class="infoLabel">
-                            <label for="recname">Recipient's Name:</label>
-                            <input type="text" class="inputLabel" id="recname" value="">
-                        </div>
-                        <div class="infoLabel">
-                            <label for="recemail">Recipient's Email:</label> 
-                            <input type="text" class="inputLabel" id="recmail" value="">
-                        </div>
-                        <div class="infoLabel"> 
-                            <label for="sendname">Your Name:</label> 
-                            <input type="text" class="inputLabel" id="sendname" value="">
+                        <div class="sendButton">
+                            <button class="theSendButton" type="button" onclick="sendEmail()">Send Email</button>
                         </div>
                     </div>
-                    <div class="sendButton">
-                        <form method="post">
-                            <input class="theSendButton" type="button" value="Send Email" onclick="sendEmail()"/>
-                        </form>  
-                    </div>
-                </div>
-            </form>
-        </div>
-    </main>
-    <footer>
-        <div class="footerBox">
-            <span>Disclaimer: Nothing violent, threatening or ilegal will be sent. We are not responsible for any kind of reaction, retaliation or outcome from the use of this service. You use it, you own it. Have fun!</span>
-        </div>
-    </footer>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footerBox">
+                <span>Disclaimer: Nothing violent, threatening or ilegal will be sent. We are not responsible for any
+                    kind of reaction, retaliation or outcome from the use of this service. You use it, you own it. Have
+                    fun!</span>
+            </div>
+        </footer>
     </div>
+    <script src="./app.js"></script>
 </body>
+
 </html>
 
-<!--Submit an email to receive a message that you can choose from 5 options-->
