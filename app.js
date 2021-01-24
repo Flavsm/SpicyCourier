@@ -39,3 +39,23 @@ something nice databse {
 make it weird database {
 
 } */
+
+
+function sendEmail() {
+
+    const recName = document.getElementById('recname').value;
+    const recEmail = document.getElementById('recmail').value;
+    const sendName = document.getElementById('sendname').value; 
+    const inputLabel = document.getElementsByClassName('inputLabel');
+
+    Email.send({
+        Secure Token: "beb0a1d9-4cb4-4463-8669-f79377287a2a",
+        To : `${recEmail}`,
+        From : "Spicy Courier",
+        Subject : `Spicy Courier here - we got a message for you ${recName}`,
+        Body : `Hello ${recName}, what do you think? Hahahahaha! Cheers, ${sendName}`,
+    }).then(function(message){
+        alert("The Courier is on its way!")
+        location.reload(inputLabel);
+    });
+};  
