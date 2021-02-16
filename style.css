@@ -13,7 +13,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-size: 12px;
 }
 
 .everythingBox {
@@ -30,6 +29,8 @@ body {
     opacity: 95%;
     font-family: 'Courier Prime', monospace;
     font-size: 15px;
+    text-align: center;
+    text-justify: left;
 }
 
 .headerTitle {
@@ -98,6 +99,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     min-width: 50vw;
+    
 }
 
 .infoLabel input {
@@ -105,7 +107,9 @@ body {
 }
 
 .infoLabel label {
+    text-align: left;
     min-width: 37vw;
+    font-size: 13px;
 }
 
 
@@ -137,6 +141,7 @@ footer {
 }
 
 @media (min-width: 600px) {
+
     .headerTitle {
         font-size: 60px;
     }
@@ -156,6 +161,7 @@ footer {
     }
     .infoLabel {
         min-width: 40vw;
+        font-size: 13px;
     }
 
     .infoLabel input {
@@ -164,6 +170,7 @@ footer {
     
     .infoLabel label {
         min-width: 15vw;
+        font-size: 15px;
     }
     footer {
         font-size: 15px;
@@ -172,6 +179,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        font-size: 15px;
     }
     .pickBox {
         display: flex;
