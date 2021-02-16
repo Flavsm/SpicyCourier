@@ -20,8 +20,8 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     background-color: white;
-    width: 100%;
-    min-height: 70vh;
+    width: 80%;
+    min-height: 80vh;
     border-radius: 25px;
     border: 1px solid black;
     padding: 30px;
@@ -29,27 +29,22 @@ body {
     font-family: 'Courier Prime', monospace;
 }
 
-@media (min-width: 600px) {
-    .everythingBox {
-        width: 50%;
-    }
-}
-
 .headerTitle {
+    display: flex;
+    flex-direction: column;
     align-self: center;
+    justify-content: center;
     min-height: 15vh;
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Sriracha', cursive;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 20px #FF180F, 0 0 30px #FF180F, 0 0 40px #FF180F, 0 0 55px #FF180F, 0 0 75px #FF180F;
 }
 
-
 .headerBox {
     display: flex;
-    min-height: 15vh;
+    min-height: 23vh;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 .instructionList {
@@ -57,6 +52,8 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+
 
 .mainBox {
     display: flex;
@@ -94,7 +91,7 @@ body {
 .infoLabel {
     display: flex;
     justify-content: space-between;
-    min-width: 40vw;
+    min-width: 70vw;
 }
 
 .infoLabel input {
@@ -120,17 +117,30 @@ body {
     padding: 4px;
 }
 
+footer {
+    display: flex;
+    min-height: 13vh;
+    align-items: flex-end;
+}
+
 @media (min-width: 600px) {
+    .headerTitle {
+        font-size: 60px;
+    }
+    .headerBox {
+        min-height: 15vh;
+    }
+    .everythingBox {
+        width: 50%;
+        min-height: 70vh;
+    }
     .theSendButton {
         font-size: 15px;
     }
     .sendButton {
         align-items: flex-end;
     }
-}
-
-footer {
-    display: flex;
-    min-height: 13vh;
-    align-items: flex-end;
+    .infoLabel {
+        min-width: 40vw;
+    }
 }
