@@ -8,6 +8,7 @@
 body {
     background-image: url(./bg.png);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -15,14 +16,23 @@ body {
 }
 
 .everythingBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: white;
-    width:50%;
+    width: 100%;
     min-height: 70vh;
     border-radius: 25px;
     border: 1px solid black;
     padding: 30px;
     opacity: 95%;
     font-family: 'Courier Prime', monospace;
+}
+
+@media (min-width: 600px) {
+    .everythingBox {
+        width: 50%;
+    }
 }
 
 .headerTitle {
