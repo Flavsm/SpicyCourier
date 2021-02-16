@@ -28,7 +28,6 @@ body {
     padding: 30px;
     opacity: 95%;
     font-family: 'Courier Prime', monospace;
-    font-size: 15px;
 }
 
 .headerTitle {
@@ -53,6 +52,7 @@ body {
 .headerParagraph {
     text-align: left;
     text-align-last: left;
+    font-size: 15px;
 }
 
 .instructionList {
