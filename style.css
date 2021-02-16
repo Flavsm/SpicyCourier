@@ -22,7 +22,7 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     background-color: white;
-    width: 80%;
+    width: 90vw;
     min-height: 80vh;
     border-radius: 25px;
     border: 1px solid black;
@@ -78,6 +78,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    font-size: 13px;
 }
 
 .pickBox {
@@ -97,11 +98,14 @@ body {
     display: flex;
     justify-content: space-evenly;
     min-width: 50vw;
-    background-color: darkgoldenrod;
 }
 
 .infoLabel input {
-    min-width: 20vw;
+    min-width: 23vw;
+}
+
+.infoLabel label {
+    min-width: 37vw;
 }
 
 
@@ -152,6 +156,14 @@ footer {
     }
     .infoLabel {
         min-width: 40vw;
+    }
+
+    .infoLabel input {
+        min-width: 30vw;
+    }
+    
+    .infoLabel label {
+        min-width: 15vw;
     }
     footer {
         font-size: 15px;
