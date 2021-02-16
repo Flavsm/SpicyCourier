@@ -95,13 +95,15 @@ body {
 
 .infoLabel {
     display: flex;
-    justify-content: space-between;
-    min-width: 70vw;
+    justify-content: space-evenly;
+    min-width: 50vw;
+    background-color: darkgoldenrod;
 }
 
 .infoLabel input {
-    min-width: 30vw;
+    min-width: 20vw;
 }
+
 
 .sendButton {
     display: flex;
