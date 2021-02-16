@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-size: 12px;
 }
 
 .everythingBox {
@@ -47,18 +48,19 @@ body {
     min-height: 23vh;
     flex-direction: column;
     justify-content: space-between;
+    flex-basis: 100%;
 }
 
 .instructionList {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-basis: 100%;
 }
 
 .mainBox {
     display: flex;
-    flex-basis: 100%;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -67,34 +69,25 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
-    flex-basis: 100%;    
+    flex-direction: column;   
 }
 
 .chooseBox {
     display: flex;
-    flex-basis: 100%;
     min-height: 12vh;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
-/* .pickBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    min-height: 10vh;
-} */
-
 .pickBox {
+    display: flex;
+    justify-content: space-around;
     text-align: center;
 }
 
 .infoBox {
     display: flex;
-    flex-basis: 100%;
     flex-direction: column;
     justify-content: space-between;
     min-height: 15vh;
@@ -107,7 +100,7 @@ body {
 }
 
 .infoLabel input {
-    min-width: 25vw;
+    min-width: 30vw;
 }
 
 .sendButton {
@@ -115,7 +108,7 @@ body {
     flex-basis: 100%;
     min-height: 8vh;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .theSendButton {
@@ -134,7 +127,7 @@ footer {
     min-height: 13vh;
     align-items: flex-end;
     justify-content: center;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 @media (min-width: 600px) {
