@@ -29,8 +29,6 @@ body {
     opacity: 95%;
     font-family: 'Courier Prime', monospace;
     font-size: 15px;
-    text-align: center;
-    text-justify: left;
 }
 
 .headerTitle {
@@ -50,6 +48,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     flex-basis: 100%;
+}
+
+.headerParagraph {
+    text-align: justify;
+    text-align-last: left;
 }
 
 .instructionList {
