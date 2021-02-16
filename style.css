@@ -58,12 +58,25 @@ body {
     align-items: center;
 }
 
-.mainBOx {
+.mainBox {
     display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBox {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 100%;    
 }
 
 .chooseBox {
     display: flex;
+    flex-basis: 100%;
     min-height: 12vh;
     flex-direction: row;
     align-items: center;
@@ -72,6 +85,7 @@ body {
 
 .infoBox {
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
     justify-content: space-between;
     min-height: 15vh;
@@ -80,33 +94,43 @@ body {
 .infoLabel {
     display: flex;
     justify-content: space-between;
-    width: 40vw;
+    min-width: 40vw;
 }
 
 .infoLabel input {
-    width: 25vw;
+    min-width: 25vw;
 }
 
 .sendButton {
     display: flex;
+    flex-basis: 100%;
     min-height: 8vh;
     justify-content: center;
-    align-items: flex-end;
-
+    align-items: center;
 }
+
 .theSendButton {
-    width:10vw;
+    min-width:10vw;
     background-color: rgb(228, 58, 58);
     border-radius: 25px;
     border: 1px black solid;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
     cursor: pointer;
-    
+    padding: 4px;
+}
+
+@media (min-width: 600px) {
+    .theSendButton {
+        font-size: 15px;
+    }
+    .sendButton {
+        align-items: flex-end;
+    }
 }
 
 footer {
     display: flex;
     min-height: 13vh;
-    align-items: center;
+    align-items: flex-end;
 }
