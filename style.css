@@ -112,12 +112,15 @@ body {
 }
 
 .infoLabel input {
-    min-width: 40vw;
+    min-width: 30vw;
 }
 
 .infoLabel label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     text-align: left;
-    min-width: 35vw;
+    min-width: 40vw;
     font-size: 13px;
     background-color: cornflowerblue;
 }
@@ -151,7 +154,7 @@ footer {
 }
 
 footer span {
-    width: 55vw;
+    width: 65vw;
     text-align: justify;
     text-align-last: left;
 }
