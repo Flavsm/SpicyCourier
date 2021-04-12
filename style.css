@@ -113,7 +113,7 @@ body {
 }
 
 .infoLabel input {
-    min-width: 30vw;
+    /* min-width: 30vw; */
 }
 
 .infoLabel label {
@@ -121,7 +121,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    min-width: 30vw;
+    min-width: 33vw;
     font-size: 13px;
     background-color: palevioletred;
 }
