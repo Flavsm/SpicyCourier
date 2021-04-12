@@ -69,6 +69,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: yellowgreen;
 }
 
 .inputBox {
@@ -77,6 +78,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column; 
     margin: 15px;
+    background-color: yellow;
 }
 
 .chooseBox {
@@ -92,30 +94,34 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    background-color: darkgreen;
+    width: 20vw;
 }
 
 .infoBox {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     min-height: 15vh;
+    background-color: darkblue;
 }
 
 .infoLabel {
     display: flex;
     justify-content: space-evenly;
     min-width: 50vw;
-    
 }
 
 .infoLabel input {
-    min-width: 20vw;
+    min-width: 40vw;
 }
 
 .infoLabel label {
     text-align: left;
-    min-width: 37vw;
+    min-width: 30vw;
     font-size: 13px;
+    background-color: cornflowerblue;
 }
 
 
@@ -147,6 +153,7 @@ footer {
 }
 
 footer span {
+    width: 40vw;
     text-align: justify;
     text-align-last: left;
 }
@@ -190,7 +197,7 @@ footer span {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
-                min-width: 15vw;
+                width: 15vw;
             }
 
             .infoLabel {
