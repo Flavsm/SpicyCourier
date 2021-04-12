@@ -78,6 +78,7 @@ body {
     flex-direction: column; 
     margin: 15px;
     background-color: yellow;
+    width: 75vw;
 }
 
 .chooseBox {
@@ -185,6 +186,7 @@ footer span {
 
             .inputBox {
                 margin: 0;
+                width: 30vw;
             }
 
             .chooseBox {
