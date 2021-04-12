@@ -18,6 +18,7 @@ body {
 .everythingBox {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
     background-color: white;
@@ -43,14 +44,14 @@ body {
 
 .headerBox {
     display: flex;
-    min-height: 23vh;
+    min-height: 27vh;
     flex-direction: column;
     justify-content: space-between;
     flex-basis: 100%;
 }
 
 .headerParagraph {
-    text-align: left;
+    text-align: justify;
     text-align-last: left;
     font-size: 15px;
 }
@@ -73,7 +74,8 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;   
+    flex-direction: column; 
+    margin: 5px;
 }
 
 .chooseBox {
@@ -143,54 +145,73 @@ footer {
     font-size: 11px;
 }
 
-@media (min-width: 600px) {
+        @media (min-width: 600px) {
 
-    .headerTitle {
-        font-size: 60px;
-    }
-    .headerBox {
-        min-height: 15vh;
-    }
-    .everythingBox {
-        width: 50%;
-        min-height: 70vh;
-        font-size: 17px;
-    }
-    .theSendButton {
-        font-size: 15px;
-    }
-    .sendButton {
-        align-items: flex-end;
-    }
-    .infoLabel {
-        min-width: 40vw;
-        font-size: 13px;
-    }
+            .everythingBox {
+                width: 50%;
+                min-height: 70vh;
+                font-size: 17px;
+            }
 
-    .infoLabel input {
-        min-width: 30vw;
-    }
-    
-    .infoLabel label {
-        min-width: 15vw;
-        font-size: 15px;
-    }
-    footer {
-        font-size: 15px;
-    }
-    .chooseBox {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        font-size: 15px;
-    }
-    .pickBox {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        min-width: 15vw;
-    }
-    .instructionList {
-        font-size: 15px;
-    }
-}
+            .headerTitle {
+                font-size: 60px;
+            }
+            .headerBox {
+                min-height: 15vh;
+            }
+
+            .headerParagraph {
+                text-align: left;
+                text-align-last: left;
+            }
+
+            .instructionList {
+                font-size: 15px;
+            }
+
+            .inputBox {
+                margin: 0;
+            }
+
+            .chooseBox {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                font-size: 15px;
+            }
+
+            .pickBox {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                min-width: 15vw;
+            }
+
+            .infoLabel {
+                min-width: 40vw;
+                font-size: 13px;
+            }
+
+            .infoLabel input {
+                min-width: 30vw;
+            }
+            
+            .infoLabel label {
+                min-width: 15vw;
+                font-size: 15px;
+            }
+
+            .sendButton {
+                align-items: flex-end;
+            }
+            
+            .theSendButton {
+                font-size: 15px;
+            }
+            
+            footer {
+                font-size: 15px;
+            }
+            
+            
+        }
