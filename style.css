@@ -88,7 +88,7 @@ body {
     align-items: center;
     font-size: 13px;
     min-height: 12vh;
-    width: 65vw;
+    width: 75vw;
     background-color: greenyellow;
 }
 
@@ -96,8 +96,8 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    width: 35vw;
-    background-color: indigo;
+    width: 40vw;
+    background-color: orange;
 }
 
 .infoBox {
@@ -106,7 +106,6 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     min-height: 15vh;
-    background-color: darkblue;
 }
 
 .infoLabel {
