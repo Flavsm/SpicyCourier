@@ -24,6 +24,7 @@ body {
     background-color: white;
     width: 90vw;
     min-height: 80vh;
+    margin-bottom: 10px;
     border-radius: 25px;
     border: 1px solid black;
     padding: 30px;
@@ -75,7 +76,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column; 
-    margin: 5px;
+    margin: 15px;
 }
 
 .chooseBox {
@@ -108,7 +109,7 @@ body {
 }
 
 .infoLabel input {
-    min-width: 23vw;
+    min-width: 20vw;
 }
 
 .infoLabel label {
@@ -143,6 +144,11 @@ footer {
     align-items: flex-end;
     justify-content: center;
     font-size: 11px;
+}
+
+footer span {
+    text-align: justify;
+    text-align-last: left;
 }
 
         @media (min-width: 600px) {
@@ -213,5 +219,8 @@ footer {
                 font-size: 15px;
             }
             
-            
+            footer span {
+                text-align: left;
+                text-align-last: left;
+            }
         }
