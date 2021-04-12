@@ -225,6 +225,7 @@ footer span {
             }
             
             footer span {
+                width: 40vw;
                 text-align: left;
                 text-align-last: left;
             }
