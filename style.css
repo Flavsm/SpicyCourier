@@ -74,27 +74,30 @@ body {
 .inputBox {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 15px;
+    /* flex-wrap: wrap; */
     background-color: green;
     width: 75vw;
 }
 
 .chooseBox {
     display: flex;
-    min-height: 12vh;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
     font-size: 13px;
+    min-height: 12vh;
+    width: 65vw;
+    background-color: greenyellow;
 }
 
 .pickBox {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    width: 20vw;
+    width: 35vw;
+    background-color: indigo;
 }
 
 .infoBox {
@@ -112,9 +115,9 @@ body {
     min-width: 50vw;
 }
 
-.infoLabel input {
-    /* min-width: 30vw; */
-}
+/* .infoLabel input {
+    min-width: 30vw;
+} */
 
 .infoLabel label {
     display: flex;
@@ -194,6 +197,7 @@ footer span {
                 flex-direction: row;
                 justify-content: space-around;
                 font-size: 15px;
+                width: 45vw;
             }
 
             .pickBox {
