@@ -93,7 +93,7 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    width: 40vw;
+    width: 45vw;
 }
 
 .infoBox {
@@ -117,7 +117,7 @@ body {
     text-align: left;
     min-width: 33vw;
     font-size: 13px;
-    min-height: 5vh;
+    min-height: 6vh;
     padding: 4px;
 }
 
